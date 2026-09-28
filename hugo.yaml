@@ -1,0 +1,32 @@
+baseURL: "https://geforze.github.io/"
+theme: black-and-light
+title: "All About the Benjamin"
+author: Ben
+languageCode: en
+canonifyURLs: true
+
+# Taxonomy pages (tags/categories) aren't styled by this theme, so they're off.
+disableKinds: ["taxonomy", "term"]
+
+params:
+  sitename: "All About the Benjamin"
+  description: "Notes on making, building, and figuring things out."
+  dateform: "January 2, 2006"
+  disableWebFonts: false
+
+menu:
+  main:
+    - name: About
+      url: /about/
+      weight: 10
+    - name: GitHub
+      url: https://github.com/geforze
+      weight: 20
+
+markup:
+  highlight:
+    style: bw
+    codeFences: true
+  goldmark:
+    renderer:
+      unsafe: true
